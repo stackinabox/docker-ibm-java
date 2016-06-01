@@ -9,7 +9,7 @@ ARG ARTIFACT_VERSION
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-	apt-get install -y --no-install-recommends net-tools curl wget bzip2 unzip xz-utils && \
+	apt-get install -y --no-install-recommends net-tools curl wget bzip2 unzip xz-utils ca-certificates && \
 	mkdir -p /opt/java && \
 	wget -O - $ARTIFACT_DOWNLOAD_URL | tar zxf - -C /opt/java/ && \
 	apt-get clean -y && \
