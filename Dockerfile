@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM ubuntu:16.04
 
 MAINTAINER Tim Pouyer <tpouyer@us.ibm.com>
 
